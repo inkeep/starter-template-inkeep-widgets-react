@@ -10,22 +10,22 @@ import {
   InkeepModalWidgetProps,
   useDisclosure,
 } from '@inkeep/inkeep-widget-library';
+import myTheme from './myTheme';
 
 function App() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const inkeepBaseSettings: InkeepWidgetBaseProps = {
-    apiKey: '', // todo
+    apiKey: '', // replace with your api key
     organizationId: 'inkeep',
-    integrationId: 'inkeep', // todo
+    integrationId: 'inkeep', // replace with your integration id
     product: '',
     organizationDisplayName: 'Inkeep',
     primaryBrandColor: '#00BFEA',
-    userId: '', // todo
+    userId: '', // replace with your user id
     userEmail: 'admin@inkeep.com',
     userName: 'Inkeep Admin',
-    // theme: overrideTheme,
-    adminToken: '',
+    theme: myTheme,
   };
 
   const inkeepAIChatSettings: InkeepAIChatProps = {
@@ -67,11 +67,11 @@ function App() {
           onClick={onOpen}
           className="trigger-button"
         >
-          Trigger modal
+          Open modal
         </button>
       </div>
       <div>
-        <div>
+        <div className="widget-wrapper">
           <InkeepAIChatWidget {...inkeepAiChatProps} />
         </div>
       </div>

@@ -1,5 +1,5 @@
 // sample theme
-const overrideTheme = {
+const myTheme = {
   // primaryColors: {
   //   textBold: null,
   //   textSubtle: null,
@@ -31,35 +31,35 @@ const overrideTheme = {
         variant: 'with-shadow',
       },
     },
-    Code: {
-      styles: {
-        backgroundColor: '',
-        border: '1px solid',
-        // color: "",
-        borderRadius: '4px',
-        fontStyle: 'normal',
-        fontWeight: '400',
-        fontSize: '14px',
-        lineHeight: '20px',
-      },
-    },
-    Sup: {
-      styles: {
-        a: {
-          background: '',
-          color: 'inkeepPrimary.strong',
-          px: '4px',
-          py: '1px',
-          borderRadius: 'sm',
-          fontWeight: 'bold',
-          _hover: {
-            // hover styles here
-            // background: '',
-            // color: 'white',
-          },
-        },
-      },
-    },
+    // Code: {
+    //   styles: {
+    //     backgroundColor: '',
+    //     border: '1px solid',
+    //     // color: "",
+    //     borderRadius: '4px',
+    //     fontStyle: 'normal',
+    //     fontWeight: '400',
+    //     fontSize: '14px',
+    //     lineHeight: '20px',
+    //   },
+    // },
+    // Sup: {
+    //   styles: {
+    //     a: {
+    //       background: '',
+    //       color: 'inkeepPrimary.strong',
+    //       px: '4px',
+    //       py: '1px',
+    //       borderRadius: 'sm',
+    //       fontWeight: 'bold',
+    //       _hover: {
+    //         // hover styles here
+    //         background: '',
+    //         color: 'white',
+    //       },
+    //     },
+    //   },
+    // },
     CodeBlockHeader: {
       styles: {
         background: '',
@@ -83,4 +83,4 @@ const overrideTheme = {
   },
 };
 
-export default overrideTheme;
+export default myTheme;
