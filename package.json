@@ -53,10 +53,12 @@
           ]
         }
       ],
+      "import/no-unresolved": "off",
       "import/extensions": [
         "error",
         "ignorePackages",
         {
+          "": "never",
           "js": "never",
           "jsx": "never",
           "ts": "never",
