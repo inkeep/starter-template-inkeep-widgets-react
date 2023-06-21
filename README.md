@@ -31,6 +31,20 @@ yarn global add install-peerdeps
 install-peerdeps @inkeep/inkeep-widget-library@latest
 ```
 
+# Add environment variables
+
+To call the chat and search service, you need to provide a few properties to the widget(s). In this sample project, they are stored as environment variables. Create an .env file with the following keys and fill in the values:
+
+```
+REACT_APP_INKEEP_INTEGRATION_API_KEY=
+REACT_APP_INKEEP_INTEGRATION_ID=
+REACT_APP_INKEEP_ORGANIZATION_ID=
+```
+
+# Configure the widget
+
+See the `sharedSettings` example files to see the available configuration properties. These include text, themeing, and other functionality settings.
+
 ## Next.js and server-side apps
 
 The component has to be fully loaded in the browser. You can use dynamic modules in Next.js to import the components you need, for example:
