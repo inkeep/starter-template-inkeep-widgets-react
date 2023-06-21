@@ -27,7 +27,7 @@ export const EmbeddedChat = () => {
       position="relative"
       flexGrow={5}
       alignSelf={"stretch"}
-      maxWidth="780px"
+      width="max( 760px , 30vw )"
       maxHeight="900px"
     >
       <InkeepEmbeddedChatWidget {...inkeepAiChatProps} />
