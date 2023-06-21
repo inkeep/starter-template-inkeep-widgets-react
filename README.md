@@ -1,6 +1,54 @@
-# Getting Started with Create React App
+# Getting Started with Inkeep Widget Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is based on [Create React App](https://github.com/facebook/create-react-app).
+
+This documentation uses yarn, but you can use npm or npm as well.
+
+## Installing packages
+
+```
+yarn add @inkeep/inkeep-widget-library@latest
+```
+
+### Installing peer dependencies
+
+There are a few peer dependencies for the package. They are peer dependencies so that they don't conflict with projects that have different versions of the same package. Peer dependencies are not automatically installed, you need to install them.
+
+#### Option 1
+
+See all the `peerDependencies` in the `package.json` in the [npm package](https://www.npmjs.com/package/@inkeep/inkeep-widget-library?activeTab=code).
+
+```
+yarn add <package>
+```
+
+#### Option 2
+
+Use [install-peerdeps](https://www.npmjs.com/package/install-peerdeps)
+
+```
+yarn global add install-peerdeps
+install-peerdeps @inkeep/inkeep-widget-library@latest
+```
+
+## Next.js and server-side apps
+
+The component has to be fully loaded in the browser. You can use dynamic modules in Next.js to import the components you need, for example:
+
+```
+const InkeepEmbeddedChatWidget = dynamic(
+  () =>
+    import("@inkeep/inkeep-widget-library-admin").then(
+      (mod) => mod.InkeepEmbeddedChatWidget
+    ),
+  {
+    ssr: false,
+  }
+);
+
+// in your component:
+// <InkeepEmbeddedChatWidget {...inkeepAIChatWidgetProps} />
+```
 
 ## Available Scripts
 

@@ -1,81 +1,81 @@
-/* eslint-disable react/jsx-props-no-spreading */
-import './App.css';
-import {
-  InkeepAIChatWidget,
-  InkeepModalWidget,
-  InkeepModalProps,
-  InkeepAIChatProps,
-  InkeepWidgetBaseProps,
-  InkeepSearchProps,
-  InkeepModalWidgetProps,
-  useDisclosure,
-} from '@inkeep/inkeep-widget-library';
-import myTheme from './myTheme';
+import { Box, Center, Flex, HStack, Heading, VStack } from "@chakra-ui/react";
+import { EmbeddedChat } from "./InkeepWidgets/EmbeddedChat";
+import { SearchBar } from "./InkeepWidgets/SearchBar";
+import { FloatingButtonLarge } from "./InkeepWidgets/FloatingButtonLarge";
+import { FloatingButtonMedium } from "./InkeepWidgets/FloatingButtonMedium";
+import { FloatingButtonSmall } from "./InkeepWidgets/FloatingButtonSmall";
 
 function App() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const inkeepBaseSettings: InkeepWidgetBaseProps = {
-    apiKey: '', // replace with your api key
-    organizationId: 'inkeep',
-    integrationId: 'inkeep', // replace with your integration id
-    product: '',
-    organizationDisplayName: 'Inkeep',
-    primaryBrandColor: '#00BFEA',
-    userId: '', // replace with your user id
-    userEmail: 'admin@inkeep.com',
-    userName: 'Inkeep Admin',
-    theme: myTheme,
-  };
-
-  const inkeepAIChatSettings: InkeepAIChatProps = {
-    botName: 'Keepie',
-    // userAvatarSrcUrl: 'path/to/user/avatar',
-    // botAvatarSrcUrl: '/path/to/bot/avatar',
-    // introMessage: 'Welcome to Inkeep :)'
-    disclaimerTooltip: 'Some disclaimer text',
-  };
-
-  const inkeepSearchSettings: InkeepSearchProps = {
-    placeholder: 'Ask me anything',
-  };
-
-  const inkeepModalSettings: InkeepModalProps = {
-    isOpen,
-    onClose,
-    onShortcutKeyPressed: onOpen,
-  };
-
-  const inkeepAiChatProps = {
-    baseSettings: { ...inkeepBaseSettings },
-    ...inkeepAIChatSettings,
-  };
-
-  const inkeepModalWidgetProps: InkeepModalWidgetProps = {
-    ...inkeepModalSettings,
-    baseSettings: { ...inkeepBaseSettings },
-    aiChatSettings: { ...inkeepAIChatSettings },
-    searchSettings: { ...inkeepSearchSettings },
-  };
-
   return (
-    <div className="App">
-      <InkeepModalWidget {...inkeepModalWidgetProps} />
-      <div>
-        <button
-          type="button"
-          onClick={onOpen}
-          className="trigger-button"
-        >
-          Open modal
-        </button>
-      </div>
-      <div>
-        <div className="widget-wrapper">
-          <InkeepAIChatWidget {...inkeepAiChatProps} />
-        </div>
-      </div>
-    </div>
+    <Box width="100vw" height="100vh">
+      <Center height="10vh" alignItems={"end"}>
+        <Heading as="h1" size="3xl">
+          Incorporate into your product as...
+        </Heading>
+      </Center>
+      <HStack
+        width="100vw"
+        height="90vh"
+        alignItems={"start"}
+        marginRight={128}
+      >
+        <Flex maxHeight="1000px" alignSelf="stretch">
+          <Flex
+            width="50vw"
+            justifyContent="end"
+            alignSelf={"stretch"}
+            boxSizing="border-box"
+          >
+            <VStack alignSelf={"stretch"} alignItems={"start"}>
+              <Box textAlign={"left"}>
+                <Heading as="h2" size="xs">
+                  ...an embedded chat widget
+                </Heading>
+              </Box>
+              <EmbeddedChat />
+            </VStack>
+          </Flex>
+
+          <Flex
+            width="50vw"
+            direction={"column"}
+            alignItems={"start"}
+            alignSelf={"stretch"}
+            justifyContent={"center"}
+            paddingLeft={124}
+            // marginTop={48}
+          >
+            <VStack spacing={60} justifyContent={"start"}>
+              <VStack alignItems={"start"}>
+                <Heading as="h2" size="xs">
+                  ... a search bar
+                </Heading>
+
+                <Box>
+                  <SearchBar></SearchBar>
+                </Box>
+              </VStack>
+
+              <VStack alignItems={"start"} alignSelf="stretch">
+                <Heading as="h2" size="xs">
+                  ... a floating chat button
+                </Heading>
+
+                <HStack
+                  width="100%"
+                  alignSelf="stretch"
+                  justifyContent={"space-between"}
+                >
+                  <FloatingButtonSmall />
+                  <FloatingButtonMedium />
+                  <FloatingButtonLarge />
+                </HStack>
+              </VStack>
+            </VStack>
+          </Flex>
+        </Flex>
+      </HStack>
+    </Box>
   );
 }
 
