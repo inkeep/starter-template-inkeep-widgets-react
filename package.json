@@ -6,7 +6,7 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@inkeep/inkeep-widget-library": "0.1.72",
+    "@inkeep/inkeep-widget-library": "0.1.732",
     "framer-motion": "^10.12.16",
     "graphql": "^16.6.0",
     "react": "^18.2.0",
