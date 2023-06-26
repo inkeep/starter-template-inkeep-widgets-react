@@ -16,7 +16,7 @@ export const inkeepBaseSettings: InkeepWidgetBaseProps = {
   organizationId: process.env.REACT_APP_INKEEP_ORGANIZATION_ID || "",
 
   // The display name for your organization.
-  organizationDisplayName: "Inkeep",
+  organizationDisplayName: "Demo",
 
   // The primary brand color, rest of default color scheme is derived from this.
   primaryBrandColor: "#00bfea",

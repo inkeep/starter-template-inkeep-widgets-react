@@ -24,8 +24,8 @@ const graphqlUrl = 'https://api.inkeep.com/graphql';
 function App() {
   return (
     <ChakraProvider>
-    <Container maxWidth="8xl" minHeight="100vh">
-      <Center height="10vh" alignItems={"end"} mb={16}>
+    <Container maxWidth="8xl" maxHeight="100vh">
+      <Center height="10vh" alignItems={"end"}>
         <Heading as="h1" size="2xl">
           <Highlight
             query="incorporate"
@@ -47,6 +47,8 @@ function App() {
             base: "column",
             md: "row",
           }}
+          maxH={'calc(90vh - 3rem)'}
+          py={6}
         >
           <Flex
             // width="50vw"

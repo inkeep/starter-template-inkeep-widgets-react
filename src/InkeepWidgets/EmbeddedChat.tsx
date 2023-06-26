@@ -31,8 +31,9 @@ export const EmbeddedChat = () => {
         base: "100%",
         md: "max(600px , 30vw)"
       }}
+      maxHeight="100%"
       // width="max(760px , 30vw )"
-      maxHeight="900px"
+      // maxHeight="900px"
     >
       <InkeepEmbeddedChatWidget {...inkeepAiChatProps} />
     </Box>
