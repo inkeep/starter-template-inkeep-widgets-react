@@ -52,7 +52,7 @@ The component has to be fully loaded in the browser. You can use dynamic modules
 ```
 const InkeepEmbeddedChatWidget = dynamic(
   () =>
-    import("@inkeep/inkeep-widget-library-admin").then(
+    import("@inkeep/inkeep-widget-library").then(
       (mod) => mod.InkeepEmbeddedChatWidget
     ),
   {
