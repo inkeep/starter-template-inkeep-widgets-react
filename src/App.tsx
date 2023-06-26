@@ -24,7 +24,7 @@ const graphqlUrl = 'https://api.inkeep.com/graphql';
 function App() {
   return (
     <ChakraProvider>
-    <Container maxWidth="100vw" width="100vw" minHeight="100vh" px={20}>
+    <Container maxWidth="8xl" minHeight="100vh">
       <Center height="10vh" alignItems={"end"} mb={16}>
         <Heading as="h1" size="2xl">
           <Highlight
@@ -40,22 +40,20 @@ function App() {
           </Highlight>
         </Heading>
       </Center>
-      {/* <HStack
-        // width="100vw"
-        // height="90vh"
-        alignItems={"start"}
-        // marginRight={128}
-        // width={"100%"}
-        // flex={1}
-        // minW={"2px"}
-      > */}
         <Flex
           alignSelf="stretch"
           justifyContent={"space-between"}
+          direction={{
+            base: "column",
+            md: "row",
+          }}
         >
           <Flex
             // width="50vw"
-            justifyContent="end"
+            justifyContent={{
+              base: "center",
+              md: "end"
+            }}
             alignSelf={"stretch"}
             boxSizing="border-box"
           >
@@ -75,7 +73,15 @@ function App() {
             alignItems={"start"}
             alignSelf={"stretch"}
             justifyContent={"center"}
-            paddingLeft={124}
+            paddingLeft={{
+              base: "0",
+              md: "12",
+              xl: "32",
+            }}
+            paddingTop={{
+              base: "20",
+              md: "0",
+            }}
             // marginTop={48}
           >
             <VStack spacing={20} justifyContent={"start"}>
@@ -165,7 +171,6 @@ function App() {
             </VStack>
           </Flex>
         </Flex>
-      {/* </HStack> */}
     </Container>
     </ChakraProvider>
   );
