@@ -1,6 +1,6 @@
-import { InkeepSearchProps } from "@inkeep/inkeep-widget-library";
+import { InkeepSearchSettings } from "@inkeep/widgets";
 
-export const inkeepSearchSettings: InkeepSearchProps = {
+export const inkeepSearchSettings: InkeepSearchSettings = {
   // Placeholder text for the search input field.
   // placeholder: "Search for anything...",
 

@@ -1,6 +1,6 @@
-import { InkeepAIChatProps } from "@inkeep/inkeep-widget-library";
+import { InkeepAIChatSettings } from "@inkeep/widgets";
 
-export const inkeepAIChatSettings: InkeepAIChatProps = {
+export const inkeepAIChatSettings: InkeepAIChatSettings = {
   // Optional placeholder for chat input. Default is 'How do I get started?'.
   // placeholder: 'How do I get started?',
 

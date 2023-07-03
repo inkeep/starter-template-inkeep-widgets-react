@@ -1,17 +1,17 @@
 import {
-  InkeepSearchBarModalProps,
-  InkeepSearchBarWidget,
-  InkeepSearchBarWidgetProps,
-} from "@inkeep/inkeep-widget-library";
+  InkeepSearchBarProps,
+  InkeepSearchBar,
+  InkeepSearchBarSettings,
+} from "@inkeep/widgets";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
 import { inkeepAIChatSettings } from "./sharedSettings/aiChatSettings";
 import { inkeepSearchSettings } from "./sharedSettings/searchSettings";
 
-export const searchBarModalSettings: InkeepSearchBarModalProps = {
+export const searchBarModalSettings: InkeepSearchBarSettings = {
   openShortcutKey: "/",
 };
 
-const inkeepSearchBarWidgetProps: InkeepSearchBarWidgetProps = {
+const inkeepSearchBarWidgetProps: InkeepSearchBarProps = {
   ...searchBarModalSettings,
   baseSettings: { ...inkeepBaseSettings },
   aiChatSettings: { ...inkeepAIChatSettings },
@@ -19,5 +19,5 @@ const inkeepSearchBarWidgetProps: InkeepSearchBarWidgetProps = {
 };
 
 export const SearchBar = () => {
-  return <InkeepSearchBarWidget {...inkeepSearchBarWidgetProps} />;
+  return <InkeepSearchBar {...inkeepSearchBarWidgetProps} />;
 };
