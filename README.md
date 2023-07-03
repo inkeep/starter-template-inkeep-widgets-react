@@ -7,7 +7,7 @@ This documentation uses yarn, but you can use npm or npm as well.
 ## Installing packages
 
 ```
-yarn add @inkeep/inkeep-widget-library@latest
+yarn add @inkeep/widgets@latest
 ```
 
 ### Installing peer dependencies
@@ -16,7 +16,7 @@ There are a few peer dependencies for the package. They are peer dependencies so
 
 #### Option 1
 
-See all the `peerDependencies` in the `package.json` in the [npm package](https://www.npmjs.com/package/@inkeep/inkeep-widget-library?activeTab=code).
+See all the `peerDependencies` in the `package.json` in the [npm package](https://www.npmjs.com/package/@inkeep/widgets?activeTab=code).
 
 ```
 yarn add <package>
@@ -28,7 +28,7 @@ Use [install-peerdeps](https://www.npmjs.com/package/install-peerdeps)
 
 ```
 yarn global add install-peerdeps
-install-peerdeps @inkeep/inkeep-widget-library@latest
+install-peerdeps @inkeep/widgets@latest
 ```
 
 # Add environment variables
@@ -52,7 +52,7 @@ The component has to be fully loaded in the browser. You can use dynamic modules
 ```
 const InkeepEmbeddedChatWidget = dynamic(
   () =>
-    import("@inkeep/inkeep-widget-library").then(
+    import("@inkeep/widgets").then(
       (mod) => mod.InkeepEmbeddedChatWidget
     ),
   {

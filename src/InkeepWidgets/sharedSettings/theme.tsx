@@ -1,4 +1,4 @@
-import { UserTheme } from "@inkeep/inkeep-widget-library/esm/components/InkeepThemeTypes";
+import { UserTheme } from "@inkeep/widgets/esm/components/InkeepThemeTypes";
 
 const theme: UserTheme = {
   // primaryColors: {

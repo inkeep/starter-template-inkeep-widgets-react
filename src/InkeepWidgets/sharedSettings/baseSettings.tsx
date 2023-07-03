@@ -1,11 +1,11 @@
 import {
-  InkeepWidgetBaseProps,
+  InkeepWidgetBaseSettings,
   ConsoleDebugLevel,
   RemoteErrorLoggingLevel,
-} from "@inkeep/inkeep-widget-library";
+} from "@inkeep/widgets";
 import theme from "./theme";
 
-export const inkeepBaseSettings: InkeepWidgetBaseProps = {
+export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // The API key for your integration.
   apiKey: process.env.REACT_APP_INKEEP_INTEGRATION_API_KEY || "",
 
@@ -19,7 +19,7 @@ export const inkeepBaseSettings: InkeepWidgetBaseProps = {
   organizationDisplayName: "Inkeep",
 
   // The primary brand color, rest of default color scheme is derived from this.
-  primaryBrandColor: "#00bfea",
+  primaryBrandColor: "#522FC9",
 
   // The custom theme for the widget. Not required.
   theme: theme,

@@ -1,25 +1,25 @@
 import {
-  InkeepFloatingButtonModalProps,
-  InkeepFloatingButtonWidgetProps,
-  InkeepFloatingButtonWidget,
-} from "@inkeep/inkeep-widget-library";
+  InkeepFloatingButtonSettings,
+  InkeepFloatingButton,
+  InkeepFloatingButtonProps,
+} from "@inkeep/widgets";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
 import { inkeepAIChatSettings } from "./sharedSettings/aiChatSettings";
 import { inkeepSearchSettings } from "./sharedSettings/searchSettings";
 
-export const inkeepFloatingButtonSmallModalSettings: InkeepFloatingButtonModalProps =
-  {
-    isModalModeSwitchingEnabled: true,
-    floatingButtonType: "ICON", // 'ICON' | 'ICON_TEXT' | 'ICON_TEXT_SHORTCUT'
-    defaultView: "AI_CHAT",
-    closeOnBlur: true,
-    isAlignedToTop: true,
-    isAlignedToRight: false,
-    areOpenHotKeysDisabled: true,
-    isPositionFixed: false,
-  };
+export const inkeepFloatingButtonSmallModalSettings: InkeepFloatingButtonSettings =
+{
+  isModalModeSwitchingEnabled: true,
+  floatingButtonType: "ICON", // 'ICON' | 'ICON_TEXT' | 'ICON_TEXT_SHORTCUT'
+  defaultView: "AI_CHAT",
+  closeOnBlur: true,
+  isAlignedToTop: true,
+  isAlignedToRight: false,
+  areOpenHotKeysDisabled: true,
+  isPositionFixed: false,
+};
 
-const inkeepFloatingButtonWidgetProps: InkeepFloatingButtonWidgetProps = {
+const inkeepFloatingButtonWidgetProps: InkeepFloatingButtonProps = {
   ...inkeepFloatingButtonSmallModalSettings,
   baseSettings: {
     ...inkeepBaseSettings,
@@ -33,5 +33,5 @@ const inkeepFloatingButtonWidgetProps: InkeepFloatingButtonWidgetProps = {
 };
 
 export const FloatingButtonSmall = () => {
-  return <InkeepFloatingButtonWidget {...inkeepFloatingButtonWidgetProps} />;
+  return <InkeepFloatingButton {...inkeepFloatingButtonWidgetProps} />;
 };
