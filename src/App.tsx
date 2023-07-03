@@ -5,7 +5,6 @@ import {
   HStack,
   Heading,
   VStack,
-  Text,
   Link,
   Image,
   Container,
@@ -13,7 +12,6 @@ import {
   Highlight,
 } from "@chakra-ui/react";
 
-import HeadingText from "./HeadingText";
 import { LeftSide } from "./LeftSide";
 import { RightSide } from "./RightSide";
 
