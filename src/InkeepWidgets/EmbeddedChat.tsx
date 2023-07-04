@@ -37,7 +37,7 @@ export const EmbeddedChat = () => {
         lg: "640px",
         '2xl': "720px"
       }}
-      maxHeight="900px"
+      height="min( 70vh, 900px )"
     >
       <InkeepEmbeddedChat {...InkeepAIChatSettings} />
     </Box>
