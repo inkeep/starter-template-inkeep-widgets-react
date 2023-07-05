@@ -9,12 +9,12 @@ const InkeepAIChatSettings = {
     theme: {
       ...inkeepBaseSettings.theme,
       components: {
-        AIChatPageWrapper: {
-          defaultProps: {
-            variant: "container-with-shadow", // add shadow to the chat widget
-            size: "expand", // makes the chat widget expand to the full width and height of the container (that is position: relative)
-          },
-        },
+        // AIChatPageWrapper: {
+        //   defaultProps: {
+        //     variant: "container-with-shadow", // add shadow to the chat widget
+        //     size: "expand", // makes the chat widget expand to the full width and height of the container (that is position: relative)
+        //   },
+        // },
       },
     },
   },
@@ -27,17 +27,7 @@ export const EmbeddedChat = () => {
       position="relative"
       flexGrow={5}
       alignSelf={"stretch"}
-      width={{
-        base: "100%",
-      }}
-
-      maxWidth={{
-        base: "100%",
-        md: "600px",
-        lg: "640px",
-        '2xl': "720px"
-      }}
-      height="min( 70vh, 900px )"
+      maxHeight={"800px"}
     >
       <InkeepEmbeddedChat {...InkeepAIChatSettings} />
     </Box>
