@@ -2289,10 +2289,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@inkeep/widgets@^0.1.82":
-  version "0.1.82"
-  resolved "https://registry.yarnpkg.com/@inkeep/widgets/-/widgets-0.1.82.tgz#c1fa0130e6ff3a587e4495bf0d9c5eccbc222832"
-  integrity sha512-RgC/9PF6a71yxGydd8SFeAM/54QQYRNVR5ZxhXcyeqsz8S2haXR6cu6y6lGZl/Om32pG7VVjPjh7+s7HCYuacQ==
+"@inkeep/widgets@^0.1.87":
+  version "0.1.87"
+  resolved "https://registry.yarnpkg.com/@inkeep/widgets/-/widgets-0.1.87.tgz#2c2da0309459ef08b96ca415ed2026d962d849e9"
+  integrity sha512-HPOs3IsonZeBmvBlFA1JZprO6zkEQlj2y81RZEy/cgJpsgl5vsDDh6ApljmdA+4npXg3+fS9+O+ni0jnw60wNg==
   dependencies:
     "@apollo/client" "^3.7.13"
     "@chakra-ui/react" "^2.7.1"
