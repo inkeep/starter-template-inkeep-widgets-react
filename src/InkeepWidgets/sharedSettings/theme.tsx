@@ -18,7 +18,17 @@ const theme: UserTheme = {
   //     body: '\'Lato\'',
   // },
   components: {
-    FloatingButton: {
+    SearchBarTrigger: {
+      styles: {
+        width: '100%',
+        maxWidth: '100%',
+      },
+      defaultProps: {
+        variant: 'emphasized',
+        size: 'expand',
+      },
+    },
+    ChatButton: {
       styles: {
         position: "relative",
         background: "red",
