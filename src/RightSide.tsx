@@ -13,57 +13,83 @@ import { SearchBar } from "./InkeepWidgets/SearchBar";
 import { FloatingButtonLarge } from "./InkeepWidgets/FloatingButtonLarge";
 import { FloatingButtonMedium } from "./InkeepWidgets/FloatingButtonMedium";
 import { FloatingButtonSmall } from "./InkeepWidgets/FloatingButtonSmall";
+
 const graphqlUrl = 'https://api.inkeep.com/graphql';
+
 
 export const RightSide = () => (
     <Flex
-        // width="50vw"
-        direction={"column"}
-        alignSelf={"stretch"}
+        direction="column"
+        alignSelf="stretch"
         paddingLeft={{
-            base: "0",
-            md: "12",
-            xl: "32",
+            base: 0,
+            xl: 32,
         }}
         paddingTop={{
-            base: "20",
-            md: "0",
+            base: 16,
+            xl: 0,
         }}
         maxHeight="700px"
-    // marginTop={48}
     >
-        <Flex direction="column" justifyContent={"space-between"} flexGrow={5}>
+        <Flex
+            direction="column"
+            justifyContent="space-between"
+            flexGrow={5}
+            maxWidth={{
+                base: '800px',
+            }}
+            alignSelf="center"
+            width="100%"
+        >
+
+            <VStack
+                alignItems="start"
+                alignSelf="stretch"
+                mb={{
+                    base: 16,
+                }}
+            >
+                <HeadingText highlight={"chat button"}>
+                    ... a floating chat button
+                </HeadingText>
+                <HStack
+                    width="100%"
+                    alignSelf="stretch"
+                    justifyContent="space-between"
+                >
+                    <FloatingButtonSmall />
+                    <FloatingButtonMedium />              <FloatingButtonLarge />
+                </HStack>
+
+            </VStack>
+
             <VStack
                 alignItems="start"
                 alignSelf="stretch"
                 width="100%"
+                mb={{
+                    base: 16,
+                }}
             >
                 <HeadingText highlight={"search bar"}>
                     ... a search bar
                 </HeadingText>
-
-                <Box width="100%">
-                    <SearchBar></SearchBar>
+                <Box
+                    width="100%"
+                    height={12}
+                >
+                    <SearchBar
+                    />
                 </Box>
             </VStack>
 
-            <VStack alignItems={"start"} alignSelf="stretch">
-                <HeadingText highlight={"chat button"}>
-                    ... a floating chat button
-                </HeadingText>
-
-                <HStack
-                    width="100%"
-                    alignSelf="stretch"
-                    justifyContent={"space-between"}
-                >
-                    <FloatingButtonSmall />
-                    <FloatingButtonMedium />
-                    <FloatingButtonLarge />
-                </HStack>
-            </VStack>
-
-            <VStack alignItems={"start"} alignSelf="stretch">
+            <VStack
+                alignItems="start"
+                alignSelf="stretch"
+                mb={{
+                    base: 16,
+                }}
+            >
                 <HeadingText highlight={"own experience"}>
                     ... your own experience
                 </HeadingText>
@@ -106,7 +132,10 @@ export const RightSide = () => (
                 </Text>
             </VStack>
 
-            <VStack alignItems={"start"} alignSelf="stretch">
+            <VStack
+                alignItems="start"
+                alignSelf="stretch"
+            >
                 <HeadingText highlight={['discord', 'slack bot']}>
                     ... a discord or slack bot
                 </HeadingText>
@@ -115,8 +144,6 @@ export const RightSide = () => (
                     alt="chat bot image"
                 />
             </VStack>
-
         </Flex>
     </Flex>
-
 );

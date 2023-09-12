@@ -1,7 +1,7 @@
 import {
   InkeepWidgetBaseSettings,
   ConsoleDebugLevel,
-  RemoteErrorLoggingLevel,
+  RemoteErrorLogsLevel,
 } from "@inkeep/widgets";
 import theme from "./theme";
 
@@ -30,9 +30,6 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // Version of the product.
   // productVersion: '',
 
-  // Array of sources shown in the search results. If not provided, will only show combined results.
-  // publicSearchResultSources: ['DOCUMENTATION', 'GITHUB_ISSUE', 'DISCOURSE', 'STACKOVERFLOW'],
-
   // User ID for analytics.
   // userId: 'af105def-f246-4665-ad6c-f89a2cfb2f70',
 
@@ -49,32 +46,25 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // logEventCallback: (event: InkeepCallbackEvent) => { console.log(event) },
 
   // Option to disable cookies used for tracking a user's inkeep usage behavior. Default is false.
-  // isOptedOutAnalyticalCookies: false,
+  // optOutAnalyticalCookies: false,
 
   // Option to disable all usage analytics, even anonymous ones. Default is false.
-  // isOptedOutAllAnalytics: false,
+  // optOutAllAnalytics: false,
 
   // Option to disable cookies that are used for functionality. Default is false.
-  // isOptedOutFunctionalCookies: false,
+  // optOutFunctionalCookies: false,
 
   // The level of remote error logging for Inkeep's monitoring service. Default is IdentifiableErrors.
-  // remoteErrorLoggingLevel: RemoteErrorLoggingLevel.IdentifiableErrors,
+  // remoteErrorLogsLevel: RemoteErrorLogsLevel.IdentifiableErrors,
 
   // The level of logging to your console. Default is Errors.
   // consoleDebugLevel: ConsoleDebugLevel.Errors,
 
   // Domain for routing search and chat API calls through a proxy.
-  // searchAndChatServiceProxyDomain: "https://mysearchandchatproxy.com",
+  // apiProxyDomain: "https://mysearchandchatproxy.com",
 
-  // Domain for routing analytics through a proxy.
-  // analyticsProxyDomain: https://mysearchandchatanalyticsproxy.com
 
   // Option to enable or disable Inkeep branding. Default is true.
   // isInkeepMentionEnabled: true,
 
-  // Text for Inkeep mention decorator.
-  // inkeepMentionDecoratorText: 'Provided by ',
-
-  // Admin token for admin dashboard only.
-  // adminToken: '',
 };
