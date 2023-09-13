@@ -1,13 +1,41 @@
 # Getting Started with Inkeep Widget Library
 
-## Install bun
+## To run this sandbox
 
-If you already have bun installed you may skip to the next step
+### Install bun
+
+Install bun (if you haven't already)
 ```
 npm install -g bun
 ```
 
+### Install deps
+
+```
+bun install
+```
+
+### Add environment variables
+
+See below on adding the necessary env vars
+
+### Start the dev server
+
+```
+bun start
+```
+
+That's it! Play around with the `sharedSettings` file to enable different features.
+
+## To get started integrating into your own app
+
 ## Installing packages
+
+```
+yarn add @inkeep/widgets@latest
+```
+
+or
 
 ```
 bun add @inkeep/widgets@latest
@@ -20,6 +48,12 @@ There are a few peer dependencies for the package. They are peer dependencies so
 #### Option 1
 
 See all the `peerDependencies` in the `package.json` in the [npm package](https://www.npmjs.com/package/@inkeep/widgets?activeTab=code).
+
+```
+yarn add <package>
+```
+
+or
 
 ```
 bun add <package>
@@ -46,7 +80,7 @@ REACT_APP_INKEEP_ORGANIZATION_ID=
 
 # Configure the widget
 
-See the `sharedSettings` example files to see the available configuration properties. These include text, themeing, and other functionality settings.
+See the `sharedSettings` example files to see the available configuration properties. These include text, theming, and other functionality settings.
 
 ## Next.js and server-side apps
 
