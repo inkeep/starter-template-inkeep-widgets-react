@@ -12,6 +12,8 @@ import { inkeepSearchSettings } from "./sharedSettings/searchSettings";
 const inkeepChatButtonLargeSettings: InkeepChatButtonSettings = {
   chatButtonType: 'ICON_TEXT_SHORTCUT',  // 'ICON' | 'ICON_TEXT' | 'ICON_TEXT_SHORTCUT'
   isPositionFixed: false,
+  // fixedPositionXOffset: '48px',
+  // fixedPositionYOffset: '48px',
 };
 
 const modalSettings: InkeepModalSettings = {

@@ -19,7 +19,7 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   organizationDisplayName: "Inkeep",
 
   // The primary brand color, rest of default color scheme is derived from this.
-  primaryBrandColor: "#522FC9",
+  primaryBrandColor: "#26D6FF",
 
   // The custom theme for the widget. Not required.
   theme: theme,
@@ -66,5 +66,54 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
 
   // Option to enable or disable Inkeep branding. Default is true.
   // isInkeepMentionEnabled: true,
+
+  // Specify the rules for how to display breadcrumbs
+  // breadcrumbRules: {
+  //   style: 'TITLE_CASE', // 'LOWER_CASE' | 'TITLE_CASE' | 'UPPER_CASE' default styling of paths to breadcrumbs
+  //   urlToBreadcrumbMapper: [
+  //     {
+  //       matchingRule: {
+  //         ruleType: 'PartialUrl',
+  //         partialUrl: 'mydomain.com',
+  //         maxNChildSubpaths: 1, // If set, then breadcrumb is only emitted if there at least N child subpaths. By default, this is 1.
+  //       },
+  //       breadcrumbName: 'string',
+  //       replaceLeading: false,
+  //     },
+  //     {
+  //       matchingRule: {
+  //         ruleType: 'SubpathOnly',
+  //         subpath: 'depth1',
+  //       },
+  //       breadcrumbName: 'string',
+  //       replaceLeading: false,
+  //     }
+  //   ], // e.g. to have urls starting with mydomain.com/{subpath} have the first breadcrumb be "Home". E.g. { "mydomain.com": "Home" }
+  // },
+
+  // Tab configuration, by default, there is an 'All' tab, a tab for all 'DocumentationRecords', and one for "Discourse", "StackOverflow", and "GitHub".
+  // customCardSettings: [{
+  //   filters: {
+  //     ALL: true,
+  //   },
+  //   icon: {
+  //     builtIn: 'FaBook', // or custom: 'https://mydomain.com/myicon.png'
+  //   },
+  //   searchTabLabel: 'All',
+  // }],
+
+  // stringReplacementRules: [
+  //   {
+  //     matchingRule: {
+  //       ruleType: 'Substring',
+  //       string: 'Api',
+  //     },
+  //     replaceWith: 'API',
+  //     replaceInTitles: true,
+  //   },
+  // ],
+
+  // set to 'development' to use the dev environment. Default is 'production'.
+  // environment: 'development', // 'development' | 'production'
 
 };

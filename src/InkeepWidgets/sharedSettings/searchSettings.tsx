@@ -8,15 +8,6 @@ export const inkeepSearchSettings: InkeepSearchSettings = {
   // The default query that will appear in the search bar.
   // prefilledQuery: '',
 
-  // tabSettings: {
-  //   // Option to enable 'All' tab in the search results. Default is true.
-  //   isAllTabEnabled: true,
-  //   rootBreadcrumbsToUseAsTabs: [],
-  //   tabOrderByLabel: [],
-  //   disabledDefaultTabs: [],
-  //   alwaysDisplayedTabs: [],
-  // },
-
   // Option to open links in a new tab. Default is false.
   shouldOpenLinksInNewTab: true,
 
@@ -28,4 +19,13 @@ export const inkeepSearchSettings: InkeepSearchSettings = {
 
   // Option to control the search query externally via updateSearchQuery and handleSearchQueryChange.
   // isControlledSearchQuery: false,
+
+  // tabSettings: {
+  //   // Option to enable 'All' tab in the search results. Default is true.
+  //   isAllTabEnabled: true,
+  //   rootBreadcrumbsToUseAsTabs: [],
+  //   tabOrderByLabel: [],
+  //   disabledDefaultTabs: [],
+  //   alwaysDisplayedTabs: [],
+  // },
 };

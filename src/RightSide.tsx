@@ -58,7 +58,8 @@ export const RightSide = () => (
                     justifyContent="space-between"
                 >
                     <FloatingButtonSmall />
-                    <FloatingButtonMedium />              <FloatingButtonLarge />
+                    <FloatingButtonMedium />
+                    <FloatingButtonLarge />
                 </HStack>
 
             </VStack>
@@ -140,7 +141,7 @@ export const RightSide = () => (
                     ... a discord or slack bot
                 </HeadingText>
                 <Image
-                    src={'chat_image.svg'}
+                    src={'/chat_image.svg'}
                     alt="chat bot image"
                 />
             </VStack>
