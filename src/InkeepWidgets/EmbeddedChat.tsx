@@ -1,9 +1,11 @@
-import { InkeepEmbeddedChat } from "@inkeep/widgets";
+import { InkeepEmbeddedChat, InkeepEmbeddedChatProps } from "@inkeep/widgets";
 import { inkeepAIChatSettings } from "./sharedSettings/aiChatSettings";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
 import { Box } from "@chakra-ui/react";
+import { inkeepShadowSettings } from "./sharedSettings/shadowSettings";
 
-const InkeepAIChatSettings = {
+const InkeepEmbeddedChatSettings: InkeepEmbeddedChatProps = {
+  ...inkeepShadowSettings,
   baseSettings: {
     ...inkeepBaseSettings,
     theme: {
@@ -30,8 +32,9 @@ export const EmbeddedChat = () => {
       flexGrow={5}
       alignSelf={"stretch"}
       maxHeight={"800px"}
+      height={'100%'}
     >
-      <InkeepEmbeddedChat {...InkeepAIChatSettings} />
+      <InkeepEmbeddedChat {...InkeepEmbeddedChatSettings} />
     </Box>
   );
 };

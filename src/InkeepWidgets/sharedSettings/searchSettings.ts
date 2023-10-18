@@ -28,4 +28,7 @@ export const inkeepSearchSettings: InkeepSearchSettings = {
   //   disabledDefaultTabs: [],
   //   alwaysDisplayedTabs: [],
   // },
+
+  // max number of search results to return
+  // maximumHitsLimit: 40,
 };

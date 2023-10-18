@@ -24,12 +24,6 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // The custom theme for the widget. Not required.
   theme: theme,
 
-  // Name of the product.
-  // product: '',
-
-  // Version of the product.
-  // productVersion: '',
-
   // User ID for analytics.
   // userId: 'af105def-f246-4665-ad6c-f89a2cfb2f70',
 
@@ -38,6 +32,18 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
 
   // User name for analytics and showing initials in the UX like 'NG' in the chat experience.
   // userName: 'Nick Gomez',
+
+  // filters: {
+    // Name of the product.
+    // product: '',
+    // Version of the product.
+    // productVersion: '',
+    // attributes: {
+    //   $and: [
+    //     { environment: "PRODUCTION_1" },
+    //   ]
+    // }
+  // }
 
   // Array of user cohorts to correlate to your own customer segmentation in analytics.
   // userCohorts: ['GROUP1'],
@@ -63,9 +69,6 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // Domain for routing search and chat API calls through a proxy.
   // apiProxyDomain: "https://mysearchandchatproxy.com",
 
-
-  // Option to enable or disable Inkeep branding. Default is true.
-  // isInkeepMentionEnabled: true,
 
   // Specify the rules for how to display breadcrumbs
   // breadcrumbRules: {
@@ -115,5 +118,11 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
 
   // set to 'development' to use the dev environment. Default is 'production'.
   // environment: 'development', // 'development' | 'production'
+
+  // which highlighter to use for code blocks
+  // highlighter: 'hljs', // 'hljs' | 'prism'
+
+  // custom code block highlighting styles
+  // highlighterTheme: {},
 
 };

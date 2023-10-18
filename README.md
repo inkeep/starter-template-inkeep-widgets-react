@@ -5,13 +5,14 @@
 ### Install bun
 
 Install bun (if you haven't already)
-```
+
+``` bash
 npm install -g bun
 ```
 
 ### Install deps
 
-```
+``` bash
 bun install
 ```
 
@@ -21,7 +22,7 @@ See below on adding the necessary env vars
 
 ### Start the dev server
 
-```
+``` bash
 bun start
 ```
 
@@ -31,13 +32,13 @@ That's it! Play around with the `sharedSettings` file to enable different featur
 
 ## Installing packages
 
-```
+```bash
 yarn add @inkeep/widgets@latest
 ```
 
 or
 
-```
+``` bash
 bun add @inkeep/widgets@latest
 ```
 
@@ -49,13 +50,13 @@ There are a few peer dependencies for the package. They are peer dependencies so
 
 See all the `peerDependencies` in the `package.json` in the [npm package](https://www.npmjs.com/package/@inkeep/widgets?activeTab=code).
 
-```
+``` bash
 yarn add <package>
 ```
 
 or
 
-```
+``` bash
 bun add <package>
 ```
 
@@ -63,22 +64,22 @@ bun add <package>
 
 Use [install-peerdeps](https://www.npmjs.com/package/install-peerdeps)
 
-```
+``` bash
 yarn global add install-peerdeps
 install-peerdeps @inkeep/widgets@latest
 ```
 
-# Add environment variables
+## Add environment variables
 
 To call the chat and search service, you need to provide a few properties to the widget(s). In this sample project, they are stored as environment variables. Create an .env file with the following keys and fill in the values:
 
-```
+```js
 REACT_APP_INKEEP_INTEGRATION_API_KEY=
 REACT_APP_INKEEP_INTEGRATION_ID=
 REACT_APP_INKEEP_ORGANIZATION_ID=
 ```
 
-# Configure the widget
+## Configure the widget
 
 See the `sharedSettings` example files to see the available configuration properties. These include text, theming, and other functionality settings.
 
@@ -86,7 +87,7 @@ See the `sharedSettings` example files to see the available configuration proper
 
 The component has to be fully loaded in the browser. You can use dynamic modules in Next.js to import the components you need, for example:
 
-```
+``` js
 const InkeepEmbeddedChatWidget = dynamic(
   () =>
     import("@inkeep/widgets").then(
@@ -99,6 +100,25 @@ const InkeepEmbeddedChatWidget = dynamic(
 
 // in your component:
 // <InkeepEmbeddedChatWidget {...inkeepAIChatWidgetProps} />
+```
+
+## Custom Styling
+
+If you would like to override particular styles in a widget, this can be done via stylesheets that are passed to the widget as props, either an array of stylesheet urls or an array of link components. See `style-overrides.css` in the public folder for some examples.
+
+``` ts
+const InkeepEmbeddedChatSettings: InkeepEmbeddedChatProps = {
+  stylesheetUrls: ['/style-overrides.css'],
+  stylesheets: [<link rel="stylesheet" href="/overrides.css" />],
+  baseSettings: { ...inkeepBaseSettings },
+  aiChatSettings: { ...inkeepAIChatSettings },
+};
+
+export const EmbeddedChat = () => {
+  return (
+    <InkeepEmbeddedChat {...InkeepEmbeddedChatSettings} />
+  );
+};
 ```
 
 ## Available Scripts

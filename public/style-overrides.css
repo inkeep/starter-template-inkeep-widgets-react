@@ -1,0 +1,12 @@
+.inkeep-ai-chat-page-wrapper {
+  /* border: 2px solid rgba(212, 228, 254, 0.191); */
+  border-radius: 1rem;
+}
+
+.inkeep-ai-chat-page-wrapper > :first-child {
+  border-radius: inherit;
+}
+
+/* .inkeep-floating-button {
+  background: darkorchid;
+} */
