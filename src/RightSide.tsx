@@ -14,7 +14,7 @@ import { FloatingButtonLarge } from "./InkeepWidgets/FloatingButtonLarge";
 import { FloatingButtonMedium } from "./InkeepWidgets/FloatingButtonMedium";
 import { FloatingButtonSmall } from "./InkeepWidgets/FloatingButtonSmall";
 
-const graphqlUrl = 'https://api.inkeep.com/graphql';
+const graphqlUrl = 'https://docs.inkeep.com/inkeep-api/using-the-graphql-playground';
 
 
 export const RightSide = () => (
@@ -50,7 +50,7 @@ export const RightSide = () => (
                 }}
             >
                 <HeadingText highlight={"chat button"}>
-                    ... a floating chat button
+                    ... a chat button
                 </HeadingText>
                 <HStack
                     width="100%"
