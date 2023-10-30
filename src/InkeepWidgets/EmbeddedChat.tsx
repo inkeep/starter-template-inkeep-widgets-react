@@ -2,10 +2,10 @@ import { InkeepEmbeddedChat, InkeepEmbeddedChatProps } from "@inkeep/widgets";
 import { inkeepAIChatSettings } from "./sharedSettings/aiChatSettings";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
 import { Box } from "@chakra-ui/react";
-import { inkeepShadowSettings } from "./sharedSettings/shadowSettings";
+import { inkeepStyleSettings } from "./sharedSettings/styleSettings";
 
 const InkeepEmbeddedChatSettings: InkeepEmbeddedChatProps = {
-  ...inkeepShadowSettings,
+  ...inkeepStyleSettings,
   baseSettings: {
     ...inkeepBaseSettings,
     theme: {

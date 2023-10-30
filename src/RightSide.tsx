@@ -118,7 +118,7 @@ export const RightSide = () => (
                         href={graphqlUrl}
                         variant="inlineTextLink"
                         isExternal
-                        color='#0F81FC' // todo
+                        color='#0F81FC'
                         fontWeight='medium'
                         textDecoration='none'
                         _hover={{
