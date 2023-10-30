@@ -54,7 +54,9 @@ See the `sharedSettings` example files to see the available configuration proper
 
 ## Next.js and server-side apps
 
-The component has to be fully loaded in the browser. You can use dynamic modules in Next.js to import the components you need, for example:
+In SSR applications, the Inkeep React components should be loaded client side.
+
+In Next.js, you can use dynamic imports like so:
 
 ``` js
 const InkeepEmbeddedChatWidget = dynamic(
@@ -70,6 +72,8 @@ const InkeepEmbeddedChatWidget = dynamic(
 // in your component:
 // <InkeepEmbeddedChatWidget {...inkeepAIChatWidgetProps} />
 ```
+
+Or in Next.js 13, you can add the `'use client'` directive at the top of a page where you use the component.
 
 ## Custom Styling
 
