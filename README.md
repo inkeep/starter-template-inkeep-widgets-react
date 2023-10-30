@@ -39,13 +39,14 @@ This widgets library requires `react` and `react-dom` version 18 as peer depende
 
 To call the chat and search service, you need to provide a few properties to the widget(s). In this sample project, they are stored as environment variables. Create an .env file with the following keys and fill in the values:
 
-(MODIFY FOR YOUR ENV, e.g. for CRA add REACT_APP)
 
 ```ts
 INKEEP_INTEGRATION_API_KEY=
 INKEEP_INTEGRATION_ID=
 INKEEP_ORGANIZATION_ID=
 ```
+
+Modify for your project as needed, e.g. for CRA, prefix with `REACT_APP`)
 
 ## Configure the widget
 
