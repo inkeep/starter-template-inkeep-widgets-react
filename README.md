@@ -2,19 +2,14 @@
 
 ## To run this sandbox
 
-### Install bun
-
-Install bun (if you haven't already)
-
-``` bash
-npm install -g bun
-```
-
 ### Install deps
+
+We'll use bun for the rest of this example, but should work similarly across `npm`, `yarn`, and `npm`
 
 ``` bash
 bun install
 ```
+
 
 ### Add environment variables
 
@@ -32,51 +27,24 @@ That's it! Play around with the `sharedSettings` file to enable different featur
 
 ## Installing packages
 
-```bash
-yarn add @inkeep/widgets@latest
-```
-
-or
-
 ``` bash
 bun add @inkeep/widgets@latest
 ```
 
-### Installing peer dependencies
+### Peer dependencies
 
-There are a few peer dependencies for the package. They are peer dependencies so that they don't conflict with projects that have different versions of the same package. Peer dependencies are not automatically installed, you need to install them.
-
-#### Option 1
-
-See all the `peerDependencies` in the `package.json` in the [npm package](https://www.npmjs.com/package/@inkeep/widgets?activeTab=code).
-
-``` bash
-yarn add <package>
-```
-
-or
-
-``` bash
-bun add <package>
-```
-
-#### Option 2
-
-Use [install-peerdeps](https://www.npmjs.com/package/install-peerdeps)
-
-``` bash
-yarn global add install-peerdeps
-install-peerdeps @inkeep/widgets@latest
-```
+This widgets library requires `react` and `react-dom` version 18 as peer dependencies. If you use an older version for your project, you can use the JS Script version instead, see the quickstart [here](https://github.com/inkeep/starter-template-widgets-embed).
 
 ## Add environment variables
 
 To call the chat and search service, you need to provide a few properties to the widget(s). In this sample project, they are stored as environment variables. Create an .env file with the following keys and fill in the values:
 
-```js
-REACT_APP_INKEEP_INTEGRATION_API_KEY=
-REACT_APP_INKEEP_INTEGRATION_ID=
-REACT_APP_INKEEP_ORGANIZATION_ID=
+(MODIFY FOR YOUR ENV, e.g. for CRA add REACT_APP)
+
+```ts
+INKEEP_INTEGRATION_API_KEY=
+INKEEP_INTEGRATION_ID=
+INKEEP_ORGANIZATION_ID=
 ```
 
 ## Configure the widget
