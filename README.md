@@ -4,7 +4,7 @@
 
 ### Install deps
 
-We'll use bun for the rest of this example, but should work similarly across `npm`, `yarn`, and `npm`
+We'll use bun for the rest of this example, but should work similarly across `npm`, `yarn`, and `pnpm`
 
 ``` bash
 bun install
