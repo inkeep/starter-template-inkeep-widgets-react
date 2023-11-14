@@ -12,13 +12,13 @@ import theme from "./theme";
 
 export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // The API key for your integration.
-  apiKey: process.env.REACT_APP_INKEEP_INTEGRATION_API_KEY || "",
+  apiKey: import.meta.env.VITE_INKEEP_INTEGRATION_API_KEY || "",
 
   // The identifier for the integration point. This might correspond to "Docs", "Dashboard", "Forums", etc.
-  integrationId: process.env.REACT_APP_INKEEP_INTEGRATION_ID || "",
+  integrationId: import.meta.env.VITE_INKEEP_INTEGRATION_ID || "",
 
   // The identifier for your organization.
-  organizationId: process.env.REACT_APP_INKEEP_ORGANIZATION_ID || "",
+  organizationId: import.meta.env.VITE_INKEEP_ORGANIZATION_ID || "",
 
   // The display name for your organization.
   organizationDisplayName: "Inkeep",
