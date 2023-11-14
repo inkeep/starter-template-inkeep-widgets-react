@@ -46,7 +46,7 @@ INKEEP_INTEGRATION_ID=
 INKEEP_ORGANIZATION_ID=
 ```
 
-Modify for your project as needed, e.g. for CRA, prefix with `REACT_APP`)
+Modify for your project as needed, e.g. for Vite, prefix with `VITE`
 
 ## Configure the widget
 
