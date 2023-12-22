@@ -1,10 +1,16 @@
 import { UserTheme } from "@inkeep/widgets";
+// import { themes } from 'prism-react-renderer';
+
+// const lightCodeTheme = themes.github;
+// const darkCodeTheme = themes.dracula;
 
 const theme: UserTheme = {
-  // colorMode: {
-  //   forcedColorMode: 'light', // 'light' or 'dark'
-  //   enableSystem: true, // use system color mode
+  // custom code block highlighting styles
+  // syntaxHighlighter: {
+    // lightTheme?: lightCodeTheme, // prism-react-renderer theme
+    // darkTheme?: darkCodeTheme,
   // },
+
   // primaryColors: {
   //   textBold: '#ffffff',
   //   textSubtle: '#ffffff',

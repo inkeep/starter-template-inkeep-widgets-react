@@ -5,10 +5,6 @@ import {
 } from "@inkeep/widgets";
 import theme from "./theme";
 
-// import { themes } from 'prism-react-renderer';
-
-// const lightCodeTheme = themes.github;
-// const darkCodeTheme = themes.dracula;
 
 export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // The API key for your integration.
@@ -28,6 +24,11 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
 
   // The custom theme for the widget. Not required.
   theme: theme,
+
+  // colorMode: {
+  //   forcedColorMode: 'light', // 'light' or 'dark'
+  //   enableSystem: true, // use system color mode
+  // },
 
   // User ID for analytics.
   // userId: 'af105def-f246-4665-ad6c-f89a2cfb2f70',
@@ -123,11 +124,5 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
 
   // set to 'development' to use the dev environment. Default is 'production'.
   // environment: 'development', // 'development' | 'production'
-
-  // custom code block highlighting styles
-  // highlighterTheme: {
-  //   lightTheme?: lightCodeTheme, // prism-react-renderer theme
-  //   darkTheme?: darkCodeTheme,
-  // },
 
 };

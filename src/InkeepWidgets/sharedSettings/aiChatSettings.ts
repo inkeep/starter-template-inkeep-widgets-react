@@ -26,7 +26,7 @@ export const inkeepAIChatSettings: InkeepAIChatSettings = {
   // shouldOpenLinksInNewTab: true,
 
   // header for suggested queries
-  // quickQuestionsLabel: 'FAQs', // default is 'Popular Questions'
+  // quickQuestionsLabel: 'FAQs', // default is 'Example Questions'
 
   // suggested queries user can auto-submit
   // quickQuestions: ['How to get started?'],
@@ -81,5 +81,13 @@ export const inkeepAIChatSettings: InkeepAIChatSettings = {
   //     url: 'https://mydomain.com/support',
   //   }
   // ],
+
+  // Customize the button labels in the chat footer.
+  // actionButtonLabels: {
+  //   clearButtonLabel: 'Clear',
+  //   shareButtonLabel: 'Share',
+  //   getHelpButtonLabel: 'Get help',
+  //   stopButtonLabel: 'Stop',
+  // },
 
 };

@@ -17,6 +17,9 @@ export const inkeepSearchSettings: InkeepSearchSettings = {
   // Callback for when the search query changes.
   // handleSearchQueryChange: (query: string) => console.log(query),
 
+  // Submits search query on enter instead of onChange, default is false.
+  // submitOnEnterOnly: false,
+
   // Option to control the search query externally via updateSearchQuery and handleSearchQueryChange.
   // isControlledSearchQuery: false,
 

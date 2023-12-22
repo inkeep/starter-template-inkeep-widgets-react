@@ -22,7 +22,7 @@ const modalSettings: InkeepModalSettings = {
   closeOnBlur: true,
   isAlignedToTop: true,
   isAlignedToRight: false,
-  areOpenHotKeysDisabled: false,
+  isShortcutKeyEnabled: true,
   openShortcutKey: 'k',
 };
 
