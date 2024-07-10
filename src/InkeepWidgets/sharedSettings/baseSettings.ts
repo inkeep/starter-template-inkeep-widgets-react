@@ -1,12 +1,12 @@
 import {
-  InkeepWidgetBaseSettings,
+  type InkeepBaseSettings,
   ConsoleDebugLevel,
   RemoteErrorLogsLevel,
-} from "@inkeep/widgets";
+} from "@inkeep/uikit";
 import theme from "./theme";
 
 
-export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
+export const inkeepBaseSettings: InkeepBaseSettings = {
   // The API key for your integration.
   apiKey: import.meta.env.VITE_INKEEP_INTEGRATION_API_KEY || "",
 
@@ -24,6 +24,12 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
 
   // The custom theme for the widget. Not required.
   theme: theme,
+
+  // override the various icons with your own or builtin options
+  // customIcons: {
+  //   search: { builtIn: 'IoSearch' },
+  //   thumbsUp: { custom: '/path-to-your-icon.svg' },
+  // },
 
   // colorMode: {
   //   forcedColorMode: 'light', // 'light' or 'dark'
@@ -73,8 +79,10 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // consoleDebugLevel: ConsoleDebugLevel.Errors,
 
   // Domain for routing search and chat API calls through a proxy.
-  // apiProxyDomain: "https://mysearchandchatproxy.com",
+  // chatApiProxyDomain: "https://mysearchandchatproxy.com",
 
+  // Domain for routing analytics API calls through a proxy.
+  // analyticsApiProxyDomain: "https://myanalyticsproxy.com",
 
   // Specify the rules for how to display breadcrumbs
   // breadcrumbRules: {
@@ -123,6 +131,14 @@ export const inkeepBaseSettings: InkeepWidgetBaseSettings = {
   // ],
 
   // set to 'development' to use the dev environment. Default is 'production'.
-  // environment: 'development', // 'development' | 'production'
+  // env: 'development', // 'development' | 'production',
+
+  // use your own instance of the Prismjs (https://prismjs.com/) library, we recommend doing this if you are using any plugins or doing any custom modifications to the instance of Prism in your application to avoid conflicts with the global Prism namespace. Note that you will need to import any additional languages you wish the syntax highlighter to support.
+  // prism: PrismLib,
+
+  // Optional query parameters to be added to documentation links. Useful for click tracking via UTM tags.
+  // appendQueryParamsToUrls: {
+  //   utm_source: 'inkeep_widget',
+  // },
 
 };

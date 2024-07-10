@@ -28,12 +28,12 @@ That's it! Play around with the `sharedSettings` file to enable different featur
 ## Installing packages
 
 ``` bash
-bun add @inkeep/widgets@latest
+bun add @inkeep/uikit@latest
 ```
 
 ### Peer dependencies
 
-This widgets library requires `react` and `react-dom` version 18 as peer dependencies. If you use an older version for your project, you can use the JS Script version instead, see the quickstart [here](https://github.com/inkeep/starter-template-widgets-embed).
+The uikit library requires `react` and `react-dom` version 18 as peer dependencies. If you use an older version for your project, you can use the JS Script version instead, see the quickstart [here](https://github.com/inkeep/starter-template-widgets-embed).
 
 ## Add environment variables
 
@@ -61,7 +61,7 @@ In Next.js, you can use dynamic imports like so:
 ``` js
 const InkeepEmbeddedChatWidget = dynamic(
   () =>
-    import("@inkeep/widgets").then(
+    import("@inkeep/uikit").then(
       (mod) => mod.InkeepEmbeddedChatWidget
     ),
   {
@@ -77,13 +77,17 @@ Or in Next.js 13, you can add the `'use client'` directive at the top of a page 
 
 ## Custom Styling
 
-If you would like to override particular styles in a widget, this can be done via stylesheets that are passed to the widget as props, either an array of stylesheet urls or an array of link components. See `style-overrides.css` in the public folder for some examples.
+If you would like to override particular styles in a widget, this can be done via stylesheets that are passed to the widget baseSettings, either an array of stylesheet urls or an array of link components. See `style-overrides.css` in the public folder for some examples.
 
 ``` ts
 const InkeepEmbeddedChatSettings: InkeepEmbeddedChatProps = {
-  stylesheetUrls: ['/style-overrides.css'],
-  stylesheets: [<link rel="stylesheet" href="/overrides.css" />],
-  baseSettings: { ...inkeepBaseSettings },
+  baseSettings: {
+    ...inkeepBaseSettings,
+    theme: {
+        stylesheetUrls: ['/style-overrides.css'],
+        stylesheets: [<link rel="stylesheet" href="/overrides.css" />],
+    }
+   },
   aiChatSettings: { ...inkeepAIChatSettings },
 };
 

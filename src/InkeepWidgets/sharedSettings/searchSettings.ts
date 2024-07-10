@@ -1,5 +1,5 @@
 import React from "react";
-import { InkeepSearchSettings, SearchFunctions } from "@inkeep/widgets";
+import type { InkeepSearchSettings, SearchFunctions } from "@inkeep/uikit";
 
 export const inkeepSearchSettings: InkeepSearchSettings = {
   // Placeholder text for the search input field.
@@ -17,9 +17,6 @@ export const inkeepSearchSettings: InkeepSearchSettings = {
   // Callback for when the search query changes.
   // handleSearchQueryChange: (query: string) => console.log(query),
 
-  // Submits search query on enter instead of onChange, default is false.
-  // submitOnEnterOnly: false,
-
   // Option to control the search query externally via updateSearchQuery and handleSearchQueryChange.
   // isControlledSearchQuery: false,
 
@@ -34,4 +31,10 @@ export const inkeepSearchSettings: InkeepSearchSettings = {
 
   // max number of search results to return
   // maximumHitsLimit: 40,
+
+  //	Number of milliseconds to wait before fetching search results. Default is 0.
+  // debounceTime: 30,
+
+  // Whether or not to show the Ask AI "<query>" card in the search results. Default true.
+  // shouldShowAskAICard: false,
 };

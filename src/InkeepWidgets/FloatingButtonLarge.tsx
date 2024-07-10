@@ -1,16 +1,16 @@
 import {
-  InkeepChatButtonSettings,
-  InkeepChatButtonProps,
-  InkeepModalSettings,
+  type InkeepChatButtonSettings,
+  type InkeepChatButtonProps,
+  type InkeepModalSettings,
   InkeepChatButton,
-} from "@inkeep/widgets";
+} from "@inkeep/uikit";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
 import { inkeepAIChatSettings } from "./sharedSettings/aiChatSettings";
 import { inkeepSearchSettings } from "./sharedSettings/searchSettings";
 
 
 const inkeepChatButtonLargeSettings: InkeepChatButtonSettings = {
-  chatButtonType: 'ICON_TEXT_SHORTCUT',  // 'ICON' | 'ICON_TEXT' | 'ICON_TEXT_SHORTCUT'
+  chatButtonType: 'RECTANGLE_SHORTCUT',  // 'ICON' | 'PILL' | 'RECTANGLE_SHORTCUT'
   isPositionFixed: false,
   // fixedPositionXOffset: '48px',
   // fixedPositionYOffset: '48px',

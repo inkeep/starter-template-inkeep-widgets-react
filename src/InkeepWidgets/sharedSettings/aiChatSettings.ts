@@ -1,4 +1,4 @@
-import { InkeepAIChatSettings } from "@inkeep/widgets";
+import type { InkeepAIChatSettings } from "@inkeep/uikit";
 
 export const inkeepAIChatSettings: InkeepAIChatSettings = {
   // Optional placeholder for chat input. Default is 'How do I get started?'.
