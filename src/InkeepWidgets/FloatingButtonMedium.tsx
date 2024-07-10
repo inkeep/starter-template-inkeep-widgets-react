@@ -1,16 +1,16 @@
 import {
-  InkeepChatButtonSettings,
-  InkeepChatButtonProps,
-  InkeepModalSettings,
+  type InkeepChatButtonSettings,
+  type InkeepChatButtonProps,
+  type InkeepModalSettings,
   InkeepChatButton,
-} from "@inkeep/widgets";
+} from "@inkeep/uikit";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
 import { inkeepAIChatSettings } from "./sharedSettings/aiChatSettings";
 import { inkeepSearchSettings } from "./sharedSettings/searchSettings";
 
 
 const inkeepChatButtonMediumSettings: InkeepChatButtonSettings = {
-  chatButtonType: 'ICON_TEXT', // 'ICON' | 'ICON_TEXT' | 'ICON_TEXT_SHORTCUT'
+  chatButtonType: 'PILL', // 'ICON' | 'PILL' | 'RECTANGLE_SHORTCUT'
   isPositionFixed: false,
 };
 

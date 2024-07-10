@@ -1,8 +1,8 @@
 import {
-  InkeepSearchBarProps,
+  type InkeepSearchBarProps,
+  type InkeepModalSettings,
   InkeepSearchBar,
-  InkeepModalSettings,
-} from "@inkeep/widgets";
+} from "@inkeep/uikit";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
 import { inkeepAIChatSettings } from "./sharedSettings/aiChatSettings";
 import { inkeepSearchSettings } from "./sharedSettings/searchSettings";

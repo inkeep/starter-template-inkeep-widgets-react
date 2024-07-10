@@ -1,4 +1,4 @@
-import { UserTheme } from "@inkeep/widgets";
+import type { UserTheme } from "@inkeep/uikit";
 // import { themes } from 'prism-react-renderer';
 
 // const lightCodeTheme = themes.github;
@@ -10,6 +10,10 @@ const theme: UserTheme = {
     // lightTheme?: lightCodeTheme, // prism-react-renderer theme
     // darkTheme?: darkCodeTheme,
   // },
+
+  // Additional customization can be done via CSS stylesheets. Because the widgets are isolated via a shadow DOM, any custom styling must be passed to the widget configuration in order for them to be applied.
+  // stylesheets: [], // array of stylesheets (ex. [<link rel="stylesheet" href="/overrides.css" />])
+  stylesheetUrls: ['/style-overrides.css'], // urls of stylesheets with overrides
 
   // primaryColors: {
   //   textBold: '#ffffff',

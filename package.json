@@ -6,7 +6,7 @@
     "@chakra-ui/react": "^2.7.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@inkeep/widgets": "latest",
+    "@inkeep/uikit": "latest",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "framer-motion": "^10.12.18",
     "react": "^18.2.0",
