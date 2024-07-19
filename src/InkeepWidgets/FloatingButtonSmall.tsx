@@ -20,7 +20,6 @@ const modalSettings: InkeepModalSettings = {
   closeOnBlur: true,
   isAlignedToTop: true,
   isAlignedToRight: false,
-  areOpenHotKeysDisabled: true,
 };
 
 

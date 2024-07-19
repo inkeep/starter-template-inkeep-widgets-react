@@ -1,4 +1,4 @@
-import { UserTheme } from "@inkeep/widgets/esm/components/InkeepThemeTypes";
+import type { UserTheme } from "@inkeep/widgets";
 
 const theme: UserTheme = {
   // primaryColors: {
@@ -26,15 +26,6 @@ const theme: UserTheme = {
       defaultProps: {
         variant: 'emphasized',
         size: 'expand',
-      },
-    },
-    ChatButton: {
-      styles: {
-        position: "relative",
-        background: "red",
-        " .inkeep-floating-button-box": {
-          position: "relative !important",
-        },
       },
     },
 

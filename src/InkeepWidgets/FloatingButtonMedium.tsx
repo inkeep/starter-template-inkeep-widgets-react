@@ -1,7 +1,7 @@
 import {
-  InkeepChatButtonSettings,
-  InkeepChatButtonProps,
-  InkeepModalSettings,
+  type InkeepChatButtonSettings,
+  type InkeepChatButtonProps,
+  type InkeepModalSettings,
   InkeepChatButton,
 } from "@inkeep/widgets";
 import { inkeepBaseSettings } from "./sharedSettings/baseSettings";
@@ -20,7 +20,6 @@ const modalSettings: InkeepModalSettings = {
   closeOnBlur: true,
   isAlignedToTop: true,
   isAlignedToRight: false,
-  areOpenHotKeysDisabled: true,
 };
 
 const inkeepFloatingButtonWidgetProps: InkeepChatButtonProps = {
